@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/61ccd8d6d36bcdff30db909a
+
+###
+
+POST http://localhost:3000/subscribers/
+Content-Type: application/json
+
+{
+    "name": "Bob Baliban",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/61ccd8d6d36bcdff30db909a
+
+###
+
+PATCH http://localhost:3000/subscribers/61ccd8d6d36bcdff30db909a
+Content-Type: application/json
+
+{
+    "name": "Nigel St. Hubbins"
+}
